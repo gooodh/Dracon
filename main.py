@@ -21,10 +21,10 @@ def checkCave(chosenCave):
     print('Вы приближаетесь к пещере...')
     time.sleep(2)
     print('Её темнота заставляет вас дрожать от страха...')
-    time.sleep(2)
+    time.sleep(3)
     print('большой дракон выскакивает перед вами!...')
     print()
-    time.sleep(2)
+    time.sleep(4)
     friendlyCave = random.randint(1, 2)
     if chosenCave == str(friendlyCave):
         print('Делится с вами своими сокровищами!')
@@ -34,7 +34,6 @@ def checkCave(chosenCave):
 
 playAgain = 'да'
 while True:
-
     if playAgain == 'да' or playAgain == 'д':
         displayIntro()
         caveNumber = chooseCave()
@@ -43,7 +42,6 @@ while True:
         playAgain = input()
 
     elif playAgain != 'да' and playAgain != 'д' and playAgain != 'нет' and playAgain != 'н':
-
         print('Я ограничен в ответах напиши пожалуйста (да или нет)')
         playAgain = input()
 
