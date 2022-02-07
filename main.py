@@ -33,7 +33,7 @@ def checkCave(chosenCave):
 
 
 playAgain = 'да'
-while playAgain != '':
+while True:
 
     if playAgain == 'да' or playAgain == 'д':
         displayIntro()
